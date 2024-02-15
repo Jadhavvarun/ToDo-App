@@ -1,21 +1,17 @@
-import React from 'react';
-import Navbar from './components/Home/Navbar';
-import Banner from './components/Home/Banner';
-import Footer from './components/Home/Footer';
-import TodoList from './components/Home/TodoList';
-import bannerImg from '../public/banner_img.png'; // Import your image file
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './routing/home';
+import About from './routing/about';
 
 function App() {
   return (
-    <div>
-      <div style={{ backgroundImage: `url(${bannerImg})`, backgroundSize: 'cover' }}>
-        <Navbar />
-        <Banner />
-      </div>
-      <TodoList />
-      <Footer />
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App
