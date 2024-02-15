@@ -28,7 +28,8 @@ function Navbar() {
         <div className="flex space-x-4">
           <Link to="/" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Home</Link>
           <Link to="/about" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>About</Link>
-          <a href="#" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Contact</a>
+          <Link to="/contact" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Contact</Link>
+          <Link to="/contact" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Log In</Link>
         </div>
       </div>
     </nav>

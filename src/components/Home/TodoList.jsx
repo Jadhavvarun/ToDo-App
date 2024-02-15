@@ -38,7 +38,7 @@ function TodoList() {
             onChange={(e) => setNewTodo(e.target.value)}
           />
           <button
-            className="px-4 py-2 bg-red-1 text-white rounded-md hover:bg-red-900 focus:outline-none"
+            className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700 focus:outline-none"
             onClick={handleAddTodo}
           >
             Add
