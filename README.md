@@ -1,4 +1,4 @@
-![image](https://github.com/Jadhavvarun/ToDo-App/assets/109531947/e56c79f5-1bdb-4b86-bca5-5976073adef8)
+![image](https://github.com/Jadhavvarun/ToDo-App/assets/109531947/8504ebc4-fdf8-423a-832d-aa3b9715ec90)
 
 # TaskPulse 
 ## TaskPulse is a simple todo app built with Vite and React.
