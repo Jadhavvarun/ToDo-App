@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -25,8 +26,8 @@ function Navbar() {
         <div className={`${hasScrolled ? 'text-black' : 'text-white'} text-2xl font-bold`}>TaskPulse</div>
         {/* You can add additional elements to the right side of the navbar */}
         <div className="flex space-x-4">
-          <a href="#" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Home</a>
-          <a href="#" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>About</a>
+          <Link to="/" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Home</Link>
+          <Link to="/about" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>About</Link>
           <a href="#" className={`${hasScrolled ? 'text-black' : 'text-white'} hover:text-gray-300`}>Contact</a>
         </div>
       </div>
