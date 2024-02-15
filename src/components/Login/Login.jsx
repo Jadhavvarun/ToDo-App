@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Signin() {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="h-auto flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
                 <div>
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
@@ -40,6 +41,28 @@ function Signin() {
                         </button>
                     </div>
                 </form>
+
+                {/* Signup Section */}
+                <div className="mt-6">
+                    <p className="text-center text-sm text-gray-600">Don't have an account yet?</p>
+                    <Link to="/register" className="block text-center mt-2 text-sm font-medium text-indigo-600 hover:text-indigo-500">Sign up</Link>
+                </div>
+
+                {/* Additional Content */}
+                <div className="mt-8 border-t border-gray-200 pt-8">
+                    <p className="text-center text-sm text-gray-600">Or continue with</p>
+                    <div className="mt-6 flex justify-center space-x-4">
+                        <button type="button" className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+                            <img src="/facebook.png" alt="facebook" className="w-8 h-8" />
+                        </button>
+                        <button type="button" className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+                            <img src="/google.png" alt="instagram" className="w-7 h-7" />
+                        </button>
+                        <button type="button" className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+                            <img src="/instagram.png" alt="instagram" className="w-8 h-8" />
+                        </button>   
+                    </div>
+                </div>
             </div>
         </div>
     );
